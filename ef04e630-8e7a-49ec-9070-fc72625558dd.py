@@ -1,202 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-#  <div style="border-radius: 15px; box-shadow: 2px 2px 4px; border: 1px solid; background:#bdc3c7; position: relative; padding: 15px; padding-left: 80px;">
-# <img src="https://lh3.googleusercontent.com/a/AAcHTtc31jlywy-FMYxLAouSSqNAmm5NsrBvivwRIASNt7wihI2ClYdpAbzWNqcigfcR04LfvopHwsJrJpnVr4UXDkCHtWk=s432-c-no" width="45" height="45" style="position: absolute; top: 15px; left: 15px; border-radius: 50%;">
-# <h7 style="color:black; margin-bottom:20px"> Валентина, привет! 
-# 
-# Мои комментарии и замечания далее по тексту помечены различными цветами:
-# 
-# ---
-# <div class="alert alert-block alert-danger">
-# ⁉️ : Критическое замечание, которые следует исправить.
-# </div>
-# 
-# <div class="alert alert-block alert-warning">
-# ✏️ : Рекомендация\совет на будущее.
-# </div>
-# 
-# <div class="alert alert-block alert-success">
-# ✔️ : Когда всё сделано правильно.
-# </div>
-# 
-# ---
-# 
-# Хорошей практикой является оставлять свои комментарии после исправлений замечаний или для вопросов, разъяснений. Для того чтобы мне было легче их найти, то выделяй, пожалуйста, с помощью цвета, например вот так:
-# 
-# <div class="alert alert-info" style="border-radius: 15px; box-shadow: 4px 4px 4px; border: 1px solid " ><b> Комментарий студента : </b>
-# 
-# Вопрос, который не останется незамеченным
-# 
-# </div>
-# 
-# ---
-# 
-# **В рамках финального спринта у вас есть лимит на количество итераций проверок. Я буду для информативности их отмечать в итоговом ревью:**
-# 
-# <div class="alert alert-danger" style="border-radius: 15px; box-shadow: 4px 4px 4px; border: 1px solid ">
-# 
-# **`[1/6]`**
-# 
-# Итог ревью - ...
-# 
-# </div>
-# 
-# p.s.: не удаляй мои замечания, если предстоит что-то доработать в проекте.</h7>
-
-# Ссылка на презентацию:  
-# 
-# https://disk.yandex.ru/i/nksEWyP7dZAAzQ
-
-# <div id="div_id" class="alert alert-danger" style="border-radius: 15px; box-shadow: 4px 4px 4px; border: 1px solid; position: relative; padding: 15px; padding-left: 80px;">
-# <img src="https://lh3.googleusercontent.com/a/AAcHTtc31jlywy-FMYxLAouSSqNAmm5NsrBvivwRIASNt7wihI2ClYdpAbzWNqcigfcR04LfvopHwsJrJpnVr4UXDkCHtWk=s432-c-no" width="45" height="45" style="position: absolute; top: 15px; left: 15px; border-radius: 50%;">
-# <b> ⁉️ Критическое замечание тимлида [v5]: </b>
-# 
-# 
-# <s>Презентация структурирована и оформлена хорошо, многие ключевые моменты представлены. Однако стоит дополнить следующие аспекты:
-# 
-# - отсутствуют цели и задачи исследования.
-# 
-# - необходимо подкорректировать содержание слайдов с учетом замечаний
-# 
-# - слайды с 24 по 39 относятся к другой презентации
-# 
-# ---
-#     
-# Презентация - это визуальный инструмент, где с помощью визуализации доносится нужная информация. Никто текст на слайдах читать не будет при выступлении. Такие формулировки "Здесь мы видим", "Видим" и т.д. не используются - пишут тезисами.
-# 
-# Основную мысль\вывод доносят с помощью заголовка слайда или аннотаций к графикам или таблицам.
-# 
-# </div>
-
-# <div class="alert alert-info" style="border-radius: 15px; box-shadow: 4px 4px 4px; border: 1px solid " ><b> Комментарий студента : </b>
-# 
-# Подправила с учетом замечаний. И удалила путсые слайды и слайды образца.
-# 
-# </div>
-
-# <div class="alert alert-success" style="border-radius: 15px; box-shadow: 4px 4px 4px; border: 1px solid; position: relative; padding: 15px; padding-left: 80px;">
-# <img src="https://lh3.googleusercontent.com/a/AAcHTtc31jlywy-FMYxLAouSSqNAmm5NsrBvivwRIASNt7wihI2ClYdpAbzWNqcigfcR04LfvopHwsJrJpnVr4UXDkCHtWk=s432-c-no" width="45" height="45" style="position: absolute; top: 15px; left: 15px; border-radius: 50%;">
-# <b> ✔️ Комментарий тимлида [v6] : </b>
-# 
-# Презентация принята
-# 
-# </div>
-
-# ---
-# 
-# <div id="1" class="alert alert-danger" style="border-radius: 15px; box-shadow: 4px 4px 4px; border: 1px solid; position: relative; padding: 15px; padding-left: 80px;">
-# <img src="https://lh3.googleusercontent.com/a/AAcHTtc31jlywy-FMYxLAouSSqNAmm5NsrBvivwRIASNt7wihI2ClYdpAbzWNqcigfcR04LfvopHwsJrJpnVr4UXDkCHtWk=s432-c-no" width="45" height="45" style="position: absolute; top: 15px; left: 15px; border-radius: 50%;">
-# <b> ⚠️ ИТОГИ РЕВЬЮ ⚠️ : </b>
-# 
-# **`[1/6]`**
-# 
-# <s>В целом, проделана неплохая работа, но мне кажется тебе необходимо пересмотреть материалы созвона. В презентации были отмечены основные ошибки (которые часто встречались в проектах прошлых когорт). 
-# 
-# Учитывай их при работе над своим проектом - зачем повторять чужие ошибки?
-# 
-# Структура и логика проекта корректные. Исследовательский этап проведен на хорошем уровне, многие метрики рассчитаны правильно (но есть критические ошибки). Вопросы заказчика представлены в полном объеме, но необходимо доработать отдельные пункты. 
-#     
-# К сожалению, я не смог провести полную проверку, т.к. падает код на 58-й ячейке. Я постарался провести ревью до этого момента, но имей ввиду, что при повторной проверке (когда код заработает), могут появиться и другие замечания.
-# 
-# 
-# Я отметил критические моменты.
-# 
-# 
-#  - [Ошибка №1](#div_id1)
-# 
-#  - [Ошибка №2](#div_id2)
-# 
-#  - [Ошибка №3](#div_id3)
-# 
-#  - [Ошибка №4](#div_id4)
-# 
-#  - [Ошибка №5](#div_id5)
-# 
-#  - [Ошибка №6](#div_id6)
-# 
-#  - [Ошибка №7](#div_id7)
-# 
-#  - [Ошибка №8](#div_id8)
-# 
-#  - [Ошибка №9](#div_id9)
-# 
-#  - [Ошибка №10](#div_id10)
-# 
-# Посмотри, пожалуйста, мои замечания и рекомендации.
-# 
-# </div>
-# 
-# <div id="2" class="alert alert-danger" style="border-radius: 15px; box-shadow: 4px 4px 4px; border: 1px solid; position: relative; padding: 15px; padding-left: 80px;">
-# <img src="https://lh3.googleusercontent.com/a/AAcHTtc31jlywy-FMYxLAouSSqNAmm5NsrBvivwRIASNt7wihI2ClYdpAbzWNqcigfcR04LfvopHwsJrJpnVr4UXDkCHtWk=s432-c-no" width="45" height="45" style="position: absolute; top: 15px; left: 15px; border-radius: 50%;">
-# <b> ⚠️ ИТОГИ РЕВЬЮ ⚠️ : </b>
-# 
-# **`[2/6]`**
-# 
-# <s>Привет. Спасибо за доработки, но остались еще моменты, которые требуют твоего внимания.
-# 
-# 
-#  - [Ошибка №11](#div_id11)
-# 
-#  - [Ошибка №12](#div_id12)
-# 
-# 
-# </div>
-# 
-# <div id="3" class="alert alert-danger" style="border-radius: 15px; box-shadow: 4px 4px 4px; border: 1px solid; position: relative; padding: 15px; padding-left: 80px;">
-# <img src="https://lh3.googleusercontent.com/a/AAcHTtc31jlywy-FMYxLAouSSqNAmm5NsrBvivwRIASNt7wihI2ClYdpAbzWNqcigfcR04LfvopHwsJrJpnVr4UXDkCHtWk=s432-c-no" width="45" height="45" style="position: absolute; top: 15px; left: 15px; border-radius: 50%;">
-# <b> ⚠️ ИТОГИ РЕВЬЮ ⚠️ : </b>
-# 
-# **`[3/6]`**
-# 
-# <s>Привет! Не смог проверить полностью, т.к. снова падает код - теперь на 51-й ячейке. 
-# 
-# - [Ошибка №13](#div_id13)
-# 
-# </div>
-# 
-# <div id="4" class="alert alert-danger" style="border-radius: 15px; box-shadow: 4px 4px 4px; border: 1px solid; position: relative; padding: 15px; padding-left: 80px;">
-# <img src="https://lh3.googleusercontent.com/a/AAcHTtc31jlywy-FMYxLAouSSqNAmm5NsrBvivwRIASNt7wihI2ClYdpAbzWNqcigfcR04LfvopHwsJrJpnVr4UXDkCHtWk=s432-c-no" width="45" height="45" style="position: absolute; top: 15px; left: 15px; border-radius: 50%;">
-# <b> ⚠️ ИТОГИ РЕВЬЮ ⚠️ : </b>
-# 
-# **`[4/6]`**
-# 
-# <s>Привет! Я не понимаю в чем сложность проверить работу на воспроизводимость перед отправкой на ревью. У тебя какие то технические проблемы? Дай, пожалуйста знать.
-# 
-# - [Ошибка №14](#div_id14)
-# 
-# </div>
-
-# <div id="5" class="alert alert-danger" style="border-radius: 15px; box-shadow: 4px 4px 4px; border: 1px solid; position: relative; padding: 15px; padding-left: 80px;">
-# <img src="https://lh3.googleusercontent.com/a/AAcHTtc31jlywy-FMYxLAouSSqNAmm5NsrBvivwRIASNt7wihI2ClYdpAbzWNqcigfcR04LfvopHwsJrJpnVr4UXDkCHtWk=s432-c-no" width="45" height="45" style="position: absolute; top: 15px; left: 15px; border-radius: 50%;">
-# <b> ⚠️ ИТОГИ РЕВЬЮ ⚠️ : </b>
-# 
-# **`[5/6]`**
-# 
-# <s>Привет! Осталось корректно рассчитать относительную частоту событий и смогу принять проект
-# 
-# - [Ошибка №15](#div_id15)
-# 
-# </div>
-# 
-# <div class="alert alert-success" style="border-radius: 15px; box-shadow: 4px 4px 4px; border: 1px solid; position: relative; padding: 15px; padding-left: 80px;">
-# <img src="https://lh3.googleusercontent.com/a/AAcHTtc31jlywy-FMYxLAouSSqNAmm5NsrBvivwRIASNt7wihI2ClYdpAbzWNqcigfcR04LfvopHwsJrJpnVr4UXDkCHtWk=s432-c-no" width="45" height="45" style="position: absolute; top: 15px; left: 15px; border-radius: 50%;">
-# <b> 🚀 ИТОГИ РЕВЬЮ 🚀 : </b>
-# 
-# Привет! Проект полностью выполнен.Все важные моменты представлены.
-# 
-# ---
-# 
-# ![](https://media.giphy.com/media/xUKrrEnN9I5lnrcSMv/giphy-downsized-large.gif)
-# 
-# ---
-# 
-# 
-# Остался последний шаг - SQL!
-# 
-# </div>
-# 
-# ---
 
 # # Анализ "Ненужные вещи"
 
@@ -235,14 +36,6 @@
 # - Проверить совпадает ли количество уникальных пользователей в обеих базах данных? 
 # - Переименовать название столбцов
 # - Объединить базы данные по user_id
-# 
-# <div class="alert alert-success" style="border-radius: 15px; box-shadow: 4px 4px 4px; border: 1px solid; position: relative; padding: 15px; padding-left: 80px;">
-# <img src="https://lh3.googleusercontent.com/a/AAcHTtc31jlywy-FMYxLAouSSqNAmm5NsrBvivwRIASNt7wihI2ClYdpAbzWNqcigfcR04LfvopHwsJrJpnVr4UXDkCHtWk=s432-c-no" width="45" height="45" style="position: absolute; top: 15px; left: 15px; border-radius: 50%;">
-# <b> ✔️ Комментарий тимлида : </b>
-# 
-# Очень хорошо, что представлено описание работы и данных, обозначены цели исследования. Так будет сразу понятно о чем проект.
-# 
-# </div>
 # 
 # 
 # Исследовательский анализ данных
@@ -353,13 +146,6 @@ initial_analysis(source)
 
 # Видим, что отсутсвтуют дубпликаты и пропуск таблицах. Приступим к обработке данных
 
-# <div class="alert alert-warning" style="border-radius: 15px; box-shadow: 4px 4px 4px; border: 1px solid; position: relative; padding: 15px; padding-left: 80px;">
-# <img src="https://lh3.googleusercontent.com/a/AAcHTtc31jlywy-FMYxLAouSSqNAmm5NsrBvivwRIASNt7wihI2ClYdpAbzWNqcigfcR04LfvopHwsJrJpnVr4UXDkCHtWk=s432-c-no" width="45" height="45" style="position: absolute; top: 15px; left: 15px; border-radius: 50%;">
-# <b> ✏️ Рекомендация тимлида: </b>
-# 
-# Рекомендую перепроверить текст на наличие опечаток и исправить их. Это улучшит общее впечатление и покажет твою внимательность к деталям.
-# 
-# </div>
 
 # Переименуем столбцы
 
@@ -422,13 +208,6 @@ data['event_name'].unique()
 data['event_name'] = data['event_name'].replace('show_contacts', 'contacts_show')
 
 
-# <div class="alert alert-success" style="border-radius: 15px; box-shadow: 4px 4px 4px; border: 1px solid; position: relative; padding: 15px; padding-left: 80px;">
-# <img src="https://lh3.googleusercontent.com/a/AAcHTtc31jlywy-FMYxLAouSSqNAmm5NsrBvivwRIASNt7wihI2ClYdpAbzWNqcigfcR04LfvopHwsJrJpnVr4UXDkCHtWk=s432-c-no" width="45" height="45" style="position: absolute; top: 15px; left: 15px; border-radius: 50%;">
-# <b> ✔️ Комментарий тимлида  : </b>
-# 
-# Действительно, данные необходимо объединить
-# 
-# </div>
 
 # ОбЪедним лог 'search_1', 'search_2', 'search_3',  'search_4', 'search_5', 'search_6', 'search_7', в один лог search
 
@@ -444,17 +223,7 @@ data['event_name'] = data['event_name'].replace('search_6','search')
 data['event_name'] = data['event_name'].replace('search_7','search')
 
 
-# <div class="alert alert-warning" style="border-radius: 15px; box-shadow: 4px 4px 4px; border: 1px solid; position: relative; padding: 15px; padding-left: 80px;">
-# <img src="https://lh3.googleusercontent.com/a/AAcHTtc31jlywy-FMYxLAouSSqNAmm5NsrBvivwRIASNt7wihI2ClYdpAbzWNqcigfcR04LfvopHwsJrJpnVr4UXDkCHtWk=s432-c-no" width="45" height="45" style="position: absolute; top: 15px; left: 15px; border-radius: 50%;">
-# <b> ✏️ Рекомендация тимлида: </b>
-# 
-# Ты вручную перебираешь и объединяешь разные `search` элементы. Если бы таких элементов было много, такой подход стал бы неудобным и трудоемким.
-# 
-# Вместо этого рекомендую использовать регулярные выражения для автоматизации этой задачи, например:
-# 
-# ![image.png](attachment:image.png)
-# 
-# </div>
+
 
 # Проверим, что период данных соответсвует заявленному в описании.
 
@@ -473,14 +242,6 @@ print('Минамальное время:',data['event_time'].min(), 'Макси
 # - Проверили что период данных соответсвует заявленному в описании.
 # 
 # 
-
-# <div class="alert alert-warning" style="border-radius: 15px; box-shadow: 4px 4px 4px; border: 1px solid; position: relative; padding: 15px; padding-left: 80px;">
-# <img src="https://lh3.googleusercontent.com/a/AAcHTtc31jlywy-FMYxLAouSSqNAmm5NsrBvivwRIASNt7wihI2ClYdpAbzWNqcigfcR04LfvopHwsJrJpnVr4UXDkCHtWk=s432-c-no" width="45" height="45" style="position: absolute; top: 15px; left: 15px; border-radius: 50%;">
-# <b> ✏️ Рекомендация тимлида: </b>
-# 
-# После всех преобразований и переименований, я бы также рекомендовал проверить данные на наличие дубликатов. Этот шаг поможет обеспечить более точные результаты анализа.
-# 
-# </div>
 
 # ## Исследуем данные
 
@@ -506,27 +267,6 @@ plt.xticks(rotation = 90)
 plt.show()
 
 
-# <div class="alert alert-warning" style="border-radius: 15px; box-shadow: 4px 4px 4px; border: 1px solid; position: relative; padding: 15px; padding-left: 80px;">
-# <img src="https://lh3.googleusercontent.com/a/AAcHTtc31jlywy-FMYxLAouSSqNAmm5NsrBvivwRIASNt7wihI2ClYdpAbzWNqcigfcR04LfvopHwsJrJpnVr4UXDkCHtWk=s432-c-no" width="45" height="45" style="position: absolute; top: 15px; left: 15px; border-radius: 50%;">
-# <b> ✏️ Рекомендация тимлида: </b>
-# 
-# Хочется обратить внимание на использование цвета в графике. В текущем исполнении цвет не добавляет дополнительного смысла к данным и может отвлекать от основной информации.
-# 
-# Предлагаю пересмотреть использование цвета и применить его только в случае, если это помогает донести какую-либо важную информацию или улучшает интерпретацию графика.
-# 
-# </div>
-
-# Видим, что самый распространенный лог это tips_show (увидел рекомендованные объявления), затем просмотр фото и search. А самый менее распространенный лог это tips_click and contact_call. Целевое событие расположилось 5-м с конца
-
-# <div class="alert alert-warning" style="border-radius: 15px; box-shadow: 4px 4px 4px; border: 1px solid; position: relative; padding: 15px; padding-left: 80px;">
-# <img src="https://lh3.googleusercontent.com/a/AAcHTtc31jlywy-FMYxLAouSSqNAmm5NsrBvivwRIASNt7wihI2ClYdpAbzWNqcigfcR04LfvopHwsJrJpnVr4UXDkCHtWk=s432-c-no" width="45" height="45" style="position: absolute; top: 15px; left: 15px; border-radius: 50%;">
-# <b> ✏️ Рекомендация тимлида: </b>
-# 
-# Здесь можно еще отметить, что событие `tips_show` отображается автоматически для всех пользователей и не зависит от их действий.
-# 
-# Поэтому в **некоторых** расчетах исследования, это событие можно не учитывать, чтобы получить более точные результаты.
-# 
-# </div>
 
 # ### Изучим активность пользователей
 
@@ -554,33 +294,13 @@ plt.xticks(rotation = 90)
 plt.show()
 
 
-# <div class="alert alert-warning" style="border-radius: 15px; box-shadow: 4px 4px 4px; border: 1px solid; position: relative; padding: 15px; padding-left: 80px;">
-# <img src="https://lh3.googleusercontent.com/a/AAcHTtc31jlywy-FMYxLAouSSqNAmm5NsrBvivwRIASNt7wihI2ClYdpAbzWNqcigfcR04LfvopHwsJrJpnVr4UXDkCHtWk=s432-c-no" width="45" height="45" style="position: absolute; top: 15px; left: 15px; border-radius: 50%;">
-# <b> ✏️ Рекомендация  тимлида: </b>
-# 
-# Если названия категорий слишком длинные, рекомендую поменять оси X и Y местами для облегчения чтения и улучшения восприятия информации.
-# 
-# </div>
 
-# Видим, что самый активный пользователь около топ15 активных пользвателей совершили примерно от 250 до 500 действий
-
-# Данные об активности пользователей
 
 # In[21]:
 
 
 events_by_users.describe()
 
-
-# <div class="alert alert-success" style="border-radius: 15px; box-shadow: 4px 4px 4px; border: 1px solid; position: relative; padding: 15px; padding-left: 80px;">
-# <img src="https://lh3.googleusercontent.com/a/AAcHTtc31jlywy-FMYxLAouSSqNAmm5NsrBvivwRIASNt7wihI2ClYdpAbzWNqcigfcR04LfvopHwsJrJpnVr4UXDkCHtWk=s432-c-no" width="45" height="45" style="position: absolute; top: 15px; left: 15px; border-radius: 50%;">
-# <b> ✔️ Комментарий тимлида  : </b>
-# 
-# Это грамотный ход - оценить характер распределения данного показателя с использованием функции `describe`.
-# 
-# Среднее арифметическое (mean) может быть чувствительным к выбросам и не всегда точно отражать картину при несимметричных распределениях данных.
-# 
-# </div>
 
 # Здесь мы вилим, что в среднем пользователь соверашает 17 действий, а медианное значение говорит,что 9 действий. Минимальное количество действий это 1
 
@@ -644,29 +364,6 @@ plt.ylabel('Количество уникальных пользователей
 plt.show()
 
 
-# <div id="div_id1" class="alert alert-danger" style="border-radius: 15px; box-shadow: 4px 4px 4px; border: 1px solid; position: relative; padding: 15px; padding-left: 80px;">
-# <img src="https://lh3.googleusercontent.com/a/AAcHTtc31jlywy-FMYxLAouSSqNAmm5NsrBvivwRIASNt7wihI2ClYdpAbzWNqcigfcR04LfvopHwsJrJpnVr4UXDkCHtWk=s432-c-no" width="45" height="45" style="position: absolute; top: 15px; left: 15px; border-radius: 50%;">
-# <b> ⁉️ Критическое замечание тимлида : </b>
-# 
-# <s>[⬆ Ошибка №1](#1)
-# 
-# Подписи к осям перепутаны местами. Подкорректируй пожалуйста
-#     
-# </div>
-
-# <div class="alert alert-info" style="border-radius: 15px; box-shadow: 4px 4px 4px; border: 1px solid " ><b> Комментарий студента : </b>
-# 
-# Подправила
-# 
-# </div>
-
-# <div class="alert alert-success" style="border-radius: 15px; box-shadow: 4px 4px 4px; border: 1px solid; position: relative; padding: 15px; padding-left: 80px;">
-# <img src="https://lh3.googleusercontent.com/a/AAcHTtc31jlywy-FMYxLAouSSqNAmm5NsrBvivwRIASNt7wihI2ClYdpAbzWNqcigfcR04LfvopHwsJrJpnVr4UXDkCHtWk=s432-c-no" width="45" height="45" style="position: absolute; top: 15px; left: 15px; border-radius: 50%;">
-# <b> ✔️ Комментарий тимлида [v2] : </b>
-# 
-# 👍
-# 
-# </div>
 
 # Видим заметное проседание в активности во второй половине недели, в особенности в субботу.
 
@@ -713,37 +410,8 @@ g = (data.groupby('user_id')['event_timestamp'].diff() > pd.Timedelta('30Min')).
 data['session_id'] = data.groupby(['user_id', g], sort=False).ngroup() + 1
 
 
-# <div id="div_id2" class="alert alert-danger" style="border-radius: 15px; box-shadow: 4px 4px 4px; border: 1px solid; position: relative; padding: 15px; padding-left: 80px;">
-# <img src="https://lh3.googleusercontent.com/a/AAcHTtc31jlywy-FMYxLAouSSqNAmm5NsrBvivwRIASNt7wihI2ClYdpAbzWNqcigfcR04LfvopHwsJrJpnVr4UXDkCHtWk=s432-c-no" width="45" height="45" style="position: absolute; top: 15px; left: 15px; border-radius: 50%;">
-# <b> ⁉️ Критическое замечание тимлида : </b>
-# 
-# <s>[⬆ Ошибка №2](#1)
-# 
-# В реальной практике тебе придется обосновать почему именно 5 мин (предупреждал на созвоне). Необходимо аргументировать свое решение.
-# 
-# От этого зависит сколько в целом у тебя получится уникальных сессий и повлияет на дальнейшие расчеты.
-# 
-# </div>
 
-# <div class="alert alert-info" style="border-radius: 15px; box-shadow: 4px 4px 4px; border: 1px solid " ><b> Комментарий студента : </b>
-# 
-# Изучив вопрос нашла, что Google Metrics выделяют сессий через тайм-аут сремя длительностью более 30 минут. Сменила с 5 минут на 30.
-# 
-#     An Ultimate Guide to Session Timeout in Google Analytics
-# https://www.dataflo.io/blog/session-timeout-in-google-analytics
-# Пункт: "How Session Timeout Works in Google Analytics"
-#     
-# </div>
-# 
-# 
 
-# <div class="alert alert-success" style="border-radius: 15px; box-shadow: 4px 4px 4px; border: 1px solid; position: relative; padding: 15px; padding-left: 80px;">
-# <img src="https://lh3.googleusercontent.com/a/AAcHTtc31jlywy-FMYxLAouSSqNAmm5NsrBvivwRIASNt7wihI2ClYdpAbzWNqcigfcR04LfvopHwsJrJpnVr4UXDkCHtWk=s432-c-no" width="45" height="45" style="position: absolute; top: 15px; left: 15px; border-radius: 50%;">
-# <b> ✔️ Комментарий тимлида [v2] : </b>
-# 
-# 👍
-# 
-# </div>
 
 # Сбрасываем дубликаты действий внутри сессий
 
@@ -754,15 +422,6 @@ data_clean=data.drop_duplicates(subset=['event_name','session_id'])
 data_clean
 
 
-# <div class="alert alert-success" style="border-radius: 15px; box-shadow: 4px 4px 4px; border: 1px solid; position: relative; padding: 15px; padding-left: 80px;">
-# <img src="https://lh3.googleusercontent.com/a/AAcHTtc31jlywy-FMYxLAouSSqNAmm5NsrBvivwRIASNt7wihI2ClYdpAbzWNqcigfcR04LfvopHwsJrJpnVr4UXDkCHtWk=s432-c-no" width="45" height="45" style="position: absolute; top: 15px; left: 15px; border-radius: 50%;">
-# <b> ✔️ Комментарий тимлида  : </b>
-# 
-# Сами по себе сессии выделены корректно
-# 
-# </div>
-
-# ### Распределение кол-во событий по отфильтрованным данным
 
 # In[32]:
 
@@ -780,32 +439,6 @@ plt.ylabel('События')
 plt.xticks(rotation = 90)
 plt.show()
 
-
-# <div id="div_id3" class="alert alert-danger" style="border-radius: 15px; box-shadow: 4px 4px 4px; border: 1px solid; position: relative; padding: 15px; padding-left: 80px;">
-# <img src="https://lh3.googleusercontent.com/a/AAcHTtc31jlywy-FMYxLAouSSqNAmm5NsrBvivwRIASNt7wihI2ClYdpAbzWNqcigfcR04LfvopHwsJrJpnVr4UXDkCHtWk=s432-c-no" width="45" height="45" style="position: absolute; top: 15px; left: 15px; border-radius: 50%;">
-# <b> ⁉️ Критическое замечание тимлида : </b>
-# 
-# <s>[⬆ Ошибка №3](#1)
-# 
-# Это нельзя называть воронкой. Здесь нет речи о последовательности этапов. Ты просто вывела количество событий в порядке убывания.
-# 
-# Воронка должна завершаться целевым действием и рассчитывается по количеству уникальных пользователей
-# 
-# </div>
-
-# <div class="alert alert-info" style="border-radius: 15px; box-shadow: 4px 4px 4px; border: 1px solid " ><b> Комментарий студента : </b>
-# 
-# Поменяла формат график на более подходящий. Хотела отобразить графиком таблицу ниже для нагляднности
-# 
-# </div>
-
-# <div class="alert alert-success" style="border-radius: 15px; box-shadow: 4px 4px 4px; border: 1px solid; position: relative; padding: 15px; padding-left: 80px;">
-# <img src="https://lh3.googleusercontent.com/a/AAcHTtc31jlywy-FMYxLAouSSqNAmm5NsrBvivwRIASNt7wihI2ClYdpAbzWNqcigfcR04LfvopHwsJrJpnVr4UXDkCHtWk=s432-c-no" width="45" height="45" style="position: absolute; top: 15px; left: 15px; border-radius: 50%;">
-# <b> ✔️ Комментарий тимлида [v2] : </b>
-# 
-# Да, так гораздо лучше
-# 
-# </div>
 
 # In[33]:
 
@@ -1115,29 +748,6 @@ senkey_diagram = plot_senkey_diagram()
 senkey_diagram.show()
 
 
-# <div id="div_id4" class="alert alert-danger" style="border-radius: 15px; box-shadow: 4px 4px 4px; border: 1px solid; position: relative; padding: 15px; padding-left: 80px;">
-# <img src="https://lh3.googleusercontent.com/a/AAcHTtc31jlywy-FMYxLAouSSqNAmm5NsrBvivwRIASNt7wihI2ClYdpAbzWNqcigfcR04LfvopHwsJrJpnVr4UXDkCHtWk=s432-c-no" width="45" height="45" style="position: absolute; top: 15px; left: 15px; border-radius: 50%;">
-# <b> ⁉️ Критическое замечание тимлида : </b>
-# 
-# <s>[⬆ Ошибка №4](#1)
-# 
-# Диаграмма Санкея построена успешно, но такой масштаб графика неинформативен. Уменьши, пожалуйста, до размеров тетрадки.
-# 
-# </div>
-
-# <div class="alert alert-info" style="border-radius: 15px; box-shadow: 4px 4px 4px; border: 1px solid " ><b> Комментарий студента : </b>
-# 
-# Поменяла размер диаграммы.
-# 
-# </div>
-
-# <div class="alert alert-success" style="border-radius: 15px; box-shadow: 4px 4px 4px; border: 1px solid; position: relative; padding: 15px; padding-left: 80px;">
-# <img src="https://lh3.googleusercontent.com/a/AAcHTtc31jlywy-FMYxLAouSSqNAmm5NsrBvivwRIASNt7wihI2ClYdpAbzWNqcigfcR04LfvopHwsJrJpnVr4UXDkCHtWk=s432-c-no" width="45" height="45" style="position: absolute; top: 15px; left: 15px; border-radius: 50%;">
-# <b> ✔️ Комментарий тимлида [v2] : </b>
-# 
-# 👍
-# 
-# </div>
 
 # 1. Видим что количество шагов всех сессий ограничивается 4 шагами максимум
 # 2. Самые популярные первые шаги tips_show, map, search
@@ -1147,21 +757,7 @@ senkey_diagram.show()
 
 # #### Воронка map - contacts_show
 
-# <div id="div_id5" class="alert alert-danger" style="border-radius: 15px; box-shadow: 4px 4px 4px; border: 1px solid; position: relative; padding: 15px; padding-left: 80px;">
-# <img src="https://lh3.googleusercontent.com/a/AAcHTtc31jlywy-FMYxLAouSSqNAmm5NsrBvivwRIASNt7wihI2ClYdpAbzWNqcigfcR04LfvopHwsJrJpnVr4UXDkCHtWk=s432-c-no" width="45" height="45" style="position: absolute; top: 15px; left: 15px; border-radius: 50%;">
-# <b> ⁉️ Критическое замечание тимлида : </b>
-# 
-# <s>[⬆ Ошибка №5](#1)
-# 
-# Не увидел этого сценария на диаграмме Санкея. Тебе необходимо выделить 3-4 популярных сценария которые приводят к целевому действию
-# 
-# </div>
 
-# <div class="alert alert-info" style="border-radius: 15px; box-shadow: 4px 4px 4px; border: 1px solid " ><b> Комментарий студента : </b>
-# 
-# Поменяла cценарий на map и contacts_show
-# 
-# </div>
 
 # In[41]:
 
@@ -1215,60 +811,6 @@ fig.add_trace(go.Funnel(
 fig.update_layout(title='Воронка конверсии пользователей map contacts_show')
 fig.show()
 
-
-# <div id="div_id6" class="alert alert-danger" style="border-radius: 15px; box-shadow: 4px 4px 4px; border: 1px solid; position: relative; padding: 15px; padding-left: 80px;">
-# <img src="https://lh3.googleusercontent.com/a/AAcHTtc31jlywy-FMYxLAouSSqNAmm5NsrBvivwRIASNt7wihI2ClYdpAbzWNqcigfcR04LfvopHwsJrJpnVr4UXDkCHtWk=s432-c-no" width="45" height="45" style="position: absolute; top: 15px; left: 15px; border-radius: 50%;">
-# <b> ⁉️ Критическое замечание тимлида : </b>
-# 
-# <s>[⬆ Ошибка №6](#1)
-# 
-# Конверсия считается по количеству уникальных пользователей, а не по количеству событий
-#     
-# ---
-#     
-# ![image.png](attachment:image.png)
-#     
-# </div>
-
-# <div class="alert alert-info" style="border-radius: 15px; box-shadow: 4px 4px 4px; border: 1px solid " ><b> Комментарий студента : </b>
-# 
-# Пересчитала по уникальным пользователям.
-# 
-# </div>
-
-# <div id="div_id11" class="alert alert-danger" style="border-radius: 15px; box-shadow: 4px 4px 4px; border: 1px solid; position: relative; padding: 15px; padding-left: 80px;">
-# <img src="https://lh3.googleusercontent.com/a/AAcHTtc31jlywy-FMYxLAouSSqNAmm5NsrBvivwRIASNt7wihI2ClYdpAbzWNqcigfcR04LfvopHwsJrJpnVr4UXDkCHtWk=s432-c-no" width="45" height="45" style="position: absolute; top: 15px; left: 15px; border-radius: 50%;">
-# <b> ⁉️ Критическое замечание тимлида [v2] : </b>
-# 
-# <s>[⬆ Ошибка №11](#2)
-# 
-# 981 - это общий показатель по датафрейму. Тебе необходимо найти сколько из 1456 (предыдущего этапа) посмотрели контакты.
-#     
-# ![image.png](attachment:image.png)
-#     
-# У тебя в каждом сценарии 981 - такого не может быть физически.
-#     
-# ---
-#     
-# Подкорректируй здесь и далее.
-# 
-# </div>
-
-# <div class="alert alert-info" style="border-radius: 15px; box-shadow: 4px 4px 4px; border: 1px solid " ><b> Комментарий студента : </b>
-# 
-# Пересчитала по уникальным пользователеям из каждого шага
-# 
-# </div>
-
-# <div class="alert alert-success" style="border-radius: 15px; box-shadow: 4px 4px 4px; border: 1px solid; position: relative; padding: 15px; padding-left: 80px;">
-# <img src="https://lh3.googleusercontent.com/a/AAcHTtc31jlywy-FMYxLAouSSqNAmm5NsrBvivwRIASNt7wihI2ClYdpAbzWNqcigfcR04LfvopHwsJrJpnVr4UXDkCHtWk=s432-c-no" width="45" height="45" style="position: absolute; top: 15px; left: 15px; border-radius: 50%;">
-# <b> ✔️ Комментарий тимлида [v3] : </b>
-# 
-# 👍
-# 
-# </div>
-
-# Видим что почти 20% процентов переходят на открытия контактных данных, после осмотра карты. Говорит о умеренном функционале карты
 
 # #### Строим воронку search photos_show contacts_show
 
@@ -1418,26 +960,7 @@ watched_users_list=watched_users['user_id'].unique().tolist()
 print('Количество пользователей которые посмотрели карточки', watched_users['user_id'].nunique())
 
 
-# <div id="div_id7" class="alert alert-danger" style="border-radius: 15px; box-shadow: 4px 4px 4px; border: 1px solid; position: relative; padding: 15px; padding-left: 80px;">
-# <img src="https://lh3.googleusercontent.com/a/AAcHTtc31jlywy-FMYxLAouSSqNAmm5NsrBvivwRIASNt7wihI2ClYdpAbzWNqcigfcR04LfvopHwsJrJpnVr4UXDkCHtWk=s432-c-no" width="45" height="45" style="position: absolute; top: 15px; left: 15px; border-radius: 50%;">
-# <b> ⁉️ Критическое замечание тимлида : </b>
-# 
-# <s>[⬆ Ошибка №7](#1)
-# 
-# Всего пользователей в данных 4293
-#     
-# ![image.png](attachment:image.png)
-#     
-# Отукда 4529?
-# 
-# </div>
 
-# <div class="alert alert-info" style="border-radius: 15px; box-shadow: 4px 4px 4px; border: 1px solid " ><b> Комментарий студента : </b>
-# 
-# Вместо nunique() использовала count(). 
-# Подправила.
-#     
-# </div>
 # 
 
 # <div class="alert alert-success" style="border-radius: 15px; box-shadow: 4px 4px 4px; border: 1px solid; position: relative; padding: 15px; padding-left: 80px;">
@@ -1459,18 +982,7 @@ print('Количество пользователей которые не по�
     'user_id == @not_watched_users')['user_id'].nunique())
 
 
-# <div id="div_id13" class="alert alert-danger" style="border-radius: 15px; box-shadow: 4px 4px 4px; border: 1px solid; position: relative; padding: 15px; padding-left: 80px;">
-# <img src="https://lh3.googleusercontent.com/a/AAcHTtc31jlywy-FMYxLAouSSqNAmm5NsrBvivwRIASNt7wihI2ClYdpAbzWNqcigfcR04LfvopHwsJrJpnVr4UXDkCHtWk=s432-c-no" width="45" height="45" style="position: absolute; top: 15px; left: 15px; border-radius: 50%;">
-# <b> ⁉️ Критическое замечание тимлида [v3]: </b>
-# 
-# <s>[⬆ Ошибка №13](#3)
-# 
-# Снова не воспроизводится код. Настоятельно рекомендую всегда перед отправкой своего решения на проверку запускать код через Kernel -> Restart & Run All.
-#     
-# ![image.png](attachment:image.png)
-# 
-# 
-# </div>
+
 
 # In[50]:
 
@@ -1510,90 +1022,12 @@ data_comb=watched_data_list.merge(not_watched_data_list, on='event_name', how='l
 data_comb.fillna(0)
 
 
-# <div id="div_id14" class="alert alert-danger" style="border-radius: 15px; box-shadow: 4px 4px 4px; border: 1px solid; position: relative; padding: 15px; padding-left: 80px;">
-# <img src="https://lh3.googleusercontent.com/a/AAcHTtc31jlywy-FMYxLAouSSqNAmm5NsrBvivwRIASNt7wihI2ClYdpAbzWNqcigfcR04LfvopHwsJrJpnVr4UXDkCHtWk=s432-c-no" width="45" height="45" style="position: absolute; top: 15px; left: 15px; border-radius: 50%;">
-# <b> ⁉️ Критическое замечание тимлида [v4]: </b>
-# 
-# <s>[⬆ Ошибка №14](#4)
-#     
-# ![image.png](attachment:image.png)
-#     
-# Почему ты перед отправкой проекта не проверяешь воспроизводимость через Kernel -> Restart & Run All. Подобные моменты очень просто проверяются. У тебя третью итерацию работа не проходит полностью все ячейки
-# 
-# 
-# 
-# </div>
 
-# <div class="alert alert-info" style="border-radius: 15px; box-shadow: 4px 4px 4px; border: 1px solid " ><b> Комментарий студента : </b>
-# 
-# Доброе утро! Я обычно проеврила код через кнопку validate. Буду иметь ввиду, что через Kernel проверка эффективнее.
-#     
-# </div>
 
-# <div id="div_id15" class="alert alert-danger" style="border-radius: 15px; box-shadow: 4px 4px 4px; border: 1px solid; position: relative; padding: 15px; padding-left: 80px;">
-# <img src="https://lh3.googleusercontent.com/a/AAcHTtc31jlywy-FMYxLAouSSqNAmm5NsrBvivwRIASNt7wihI2ClYdpAbzWNqcigfcR04LfvopHwsJrJpnVr4UXDkCHtWk=s432-c-no" width="45" height="45" style="position: absolute; top: 15px; left: 15px; border-radius: 50%;">
-# <b> ⁉️ Критическое замечание тимлида [v5] : </b>
-# 
-# <s>[⬆ Ошибка №15](#5)
-# 
-# Давай еще раз. 
-#     
-# Тебе необходимо в каждой группе `watched` и `not_watched` рассчитать долю событий.
-#     
-# Например в `watched` событие `photos_show` встречалось 3828. Доля этого события будет 
-#     
-#     3828 / общее количество событий в группе watched. 
-#     
-# И так по каждому событию.
-#     
-# Аналогичный расчет проводится и группе `not_watched`. Далее сравниваются получившиеся доли между группами. Например в первой группе доля просмотра фото 20% (с потолка), а во второй группе допустим 10% - делаешь соответствующий вывод.
-# 
-# 
-# </div>
 
-# <div class="alert alert-info" style="border-radius: 15px; box-shadow: 4px 4px 4px; border: 1px solid " ><b> Комментарий студента2 : </b>
-# 
-# Доброе день! Спасибо за подробное разъяснение!
-#     
-# </div>
 
-# <div class="alert alert-success" style="border-radius: 15px; box-shadow: 4px 4px 4px; border: 1px solid; position: relative; padding: 15px; padding-left: 80px;">
-# <img src="https://lh3.googleusercontent.com/a/AAcHTtc31jlywy-FMYxLAouSSqNAmm5NsrBvivwRIASNt7wihI2ClYdpAbzWNqcigfcR04LfvopHwsJrJpnVr4UXDkCHtWk=s432-c-no" width="45" height="45" style="position: absolute; top: 15px; left: 15px; border-radius: 50%;">
-# <b> ✔️ Комментарий тимлида [v6] : </b>
-# 
-# Теперь расчет верный
-# 
-# </div>
 
-# <div id="div_id12" class="alert alert-danger" style="border-radius: 15px; box-shadow: 4px 4px 4px; border: 1px solid; position: relative; padding: 15px; padding-left: 80px;">
-# <img src="https://lh3.googleusercontent.com/a/AAcHTtc31jlywy-FMYxLAouSSqNAmm5NsrBvivwRIASNt7wihI2ClYdpAbzWNqcigfcR04LfvopHwsJrJpnVr4UXDkCHtWk=s432-c-no" width="45" height="45" style="position: absolute; top: 15px; left: 15px; border-radius: 50%;">
-# <b> ⁉️ Критическое замечание тимлида [v2] : </b>
-# 
-# <s>[⬆ Ошибка №12](#2)
-# 
-# Я не вижу долей или процентов. Ты выводишь абсолютные показатели по каждой группе.
-#     
-# Тебе необходимо рассчитать доли событий в каждой группе, сравнить эти показатели между группами и сформировать вывод
-# 
-# 
-# </div>
 
-# <div id="div_id8" class="alert alert-danger" style="border-radius: 15px; box-shadow: 4px 4px 4px; border: 1px solid; position: relative; padding: 15px; padding-left: 80px;">
-# <img src="https://lh3.googleusercontent.com/a/AAcHTtc31jlywy-FMYxLAouSSqNAmm5NsrBvivwRIASNt7wihI2ClYdpAbzWNqcigfcR04LfvopHwsJrJpnVr4UXDkCHtWk=s432-c-no" width="45" height="45" style="position: absolute; top: 15px; left: 15px; border-radius: 50%;">
-# <b> ⁉️ Критическое замечание тимлида : </b>
-# 
-# <s>[⬆ Ошибка №8](#1)
-# 
-# 
-# Относительная частота конкретного события - это доля (процент) конкретного события относительно общего количества событий в группе.
-# 
-# </div>
-
-# <div class="alert alert-info" style="border-radius: 15px; box-shadow: 4px 4px 4px; border: 1px solid " ><b> Комментарий студента : </b>
-# 
-# Сделала перерасчет и сформировала таблицу
-# 
-# </div>
 
 # Частота событий в разрезе двух групп пользователей. (смотрели/не смотрели contacts_show)¶
 # Рассчитаем и построим график по этим двум группам
@@ -1688,51 +1122,8 @@ tips_show_conv=only_tips_users_list_goal_event/show_events_len
 print(f'Конверсия только tips_show пользователей: {round(tips_show_conv*100, 2)}%')
 
 
-# <div id="div_id9" class="alert alert-danger" style="border-radius: 15px; box-shadow: 4px 4px 4px; border: 1px solid; position: relative; padding: 15px; padding-left: 80px;">
-# <img src="https://lh3.googleusercontent.com/a/AAcHTtc31jlywy-FMYxLAouSSqNAmm5NsrBvivwRIASNt7wihI2ClYdpAbzWNqcigfcR04LfvopHwsJrJpnVr4UXDkCHtWk=s432-c-no" width="45" height="45" style="position: absolute; top: 15px; left: 15px; border-radius: 50%;">
-# <b> ⁉️ Критическое замечание тимлида : </b>
-# 
-# <s>[⬆ Ошибка №9](#1)
-# 
-# И здесь конверсия рассчитана неверно. Пользователей у нас всего 4293, а ты считаешь по количеству событий
-# 
-# </div>
 
-# <div class="alert alert-warning" style="border-radius: 15px; box-shadow: 4px 4px 4px; border: 1px solid; position: relative; padding: 15px; padding-left: 80px;">
-# <img src="https://lh3.googleusercontent.com/a/AAcHTtc31jlywy-FMYxLAouSSqNAmm5NsrBvivwRIASNt7wihI2ClYdpAbzWNqcigfcR04LfvopHwsJrJpnVr4UXDkCHtWk=s432-c-no" width="45" height="45" style="position: absolute; top: 15px; left: 15px; border-radius: 50%;">
-# <b> ✏️ Рекомендация тимлида: </b>
-# 
-# В некоторых местах строки кода превышают рекомендуемую длину в 79 символов.
-# 
-# Чтобы сделать код более читаемым и соответствующим стандартам PEP8, предлагаю разделять длинные строки кода, используя круглые скобки.
-# 
-# Такой подход позволит улучшить читаемость кода и соблюсти рекомендуемые стандарты.
-# 
-# 
-# </div>
 
-# <div class="alert alert-info" style="border-radius: 15px; box-shadow: 4px 4px 4px; border: 1px solid " ><b> Комментарий студента : </b>
-# 
-# Подправила, переделала структуру 6 раздела, чтобы было удобнее читать.
-# 
-# </div>
-
-# <div id="div_id10" class="alert alert-danger" style="border-radius: 15px; box-shadow: 4px 4px 4px; border: 1px solid; position: relative; padding: 15px; padding-left: 80px;">
-# <img src="https://lh3.googleusercontent.com/a/AAcHTtc31jlywy-FMYxLAouSSqNAmm5NsrBvivwRIASNt7wihI2ClYdpAbzWNqcigfcR04LfvopHwsJrJpnVr4UXDkCHtWk=s432-c-no" width="45" height="45" style="position: absolute; top: 15px; left: 15px; border-radius: 50%;">
-# <b> ⁉️ Критическое замечание тимлида : </b>
-# 
-# <s>[⬆ Ошибка №10](#1)
-# 
-# 
-# К сожалению, столкнулся с проблемой воспроизводимости кода. Проверка кода на воспроизводимость - это ключевой момент, который не стоит пропускать.
-#     
-# ![image.png](attachment:image.png)
-# 
-# Настоятельно рекомендую всегда перед отправкой своего решения на проверку запускать код через Kernel -> Restart & Run All.
-# 
-# Это поможет избежать неприятных ситуаций, когда что-то не работает, и увеличит вероятность того, что твой проект будет принят.
-# 
-# </div>
 
 # Гипотеза
 
@@ -1795,13 +1186,7 @@ trials = [tips_click_count_len, show_events_len]
 z_test(successes, trials, alpha) 
 
 
-# <div class="alert alert-success" style="border-radius: 15px; box-shadow: 4px 4px 4px; border: 1px solid; position: relative; padding: 15px; padding-left: 80px;">
-# <img src="https://lh3.googleusercontent.com/a/AAcHTtc31jlywy-FMYxLAouSSqNAmm5NsrBvivwRIASNt7wihI2ClYdpAbzWNqcigfcR04LfvopHwsJrJpnVr4UXDkCHtWk=s432-c-no" width="45" height="45" style="position: absolute; top: 15px; left: 15px; border-radius: 50%;">
-# <b> ✔️ Комментарий тимлида [v2] : </b>
-# 
-# Методологически проверка гипотез проведена верно + выведены показатели конверсии данных групп
-# 
-# </div>
+
 
 # По итогам z-test мы отвергаем нулевую гипотезу.  
 # 
@@ -1889,13 +1274,7 @@ trials = [map_count, no_map_count]
 z_test(successes, trials, alpha) 
 
 
-# <div class="alert alert-success" style="border-radius: 15px; box-shadow: 4px 4px 4px; border: 1px solid; position: relative; padding: 15px; padding-left: 80px;">
-# <img src="https://lh3.googleusercontent.com/a/AAcHTtc31jlywy-FMYxLAouSSqNAmm5NsrBvivwRIASNt7wihI2ClYdpAbzWNqcigfcR04LfvopHwsJrJpnVr4UXDkCHtWk=s432-c-no" width="45" height="45" style="position: absolute; top: 15px; left: 15px; border-radius: 50%;">
-# <b> ✔️ Комментарий тимлида  : </b>
-# 
-# И здесь проверка проведена успешно
-# 
-# </div>
+
 
 # По итогам z-test мы отвергаем нулевую гипотезу. Вывод: конверсия в просмотры группы пользователей совершающие действия map не равна конверсии в просмотры группы пользователей, которые это действие не совершили
 # 
